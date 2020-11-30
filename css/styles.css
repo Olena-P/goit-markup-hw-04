@@ -226,7 +226,7 @@ a {
 .section-skills{
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: #E5E5E5;
+    background-color: white;
 }
 
 /*================= END Section 1============= */
@@ -253,14 +253,8 @@ a {
 }
 
 .section-images{
-    background-color: #E5E5E5;
+    padding-bottom: 94px;
 }
-
-.section-skills{
-    background-color: var(--primary-background-color);
-}
-
-
 
 /*================= END Section 2============= */
 
@@ -275,15 +269,12 @@ a {
     line-height: 1.17;
     text-align: center;
     color: var(--title-texst-color);
-    /* padding-top: 94px;
-    padding-bottom: 50px; */
 }
 
 .team-list{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* background-color: #FFFFFF; */
     padding-top: 50px;
 }
 
@@ -341,7 +332,6 @@ a {
 
 .footer{
     background: #2F303A;
-    height: 252px;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -370,10 +360,6 @@ a {
     padding-bottom: 60px;
 }
 
-.footer-list-address{
-    margin-top: 20px;
-}
-
 .footer-address{
     margin-top: 9px;
 }
@@ -382,7 +368,7 @@ a {
     color: #757575;
 }
 
-.footer-list-address{
+.footer-address.sity{
     margin-top: 20px;
 }
  .footer-address{
@@ -416,7 +402,6 @@ a {
 }
 
 .portfolio{
-    background-color: #E5E5E5;
     padding-bottom: 94px;
     padding-top: 94px;
 }
