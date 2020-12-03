@@ -104,6 +104,17 @@ a {
     color: var(--accent-color);
 }
 
+/* .site-nav-link.mail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 16px;
+    height: 12px;
+    border-radius: 50%;
+    color: #2196F3;
+} */
+
 .site-nav-link.mail{
     color: #757575;
 }
