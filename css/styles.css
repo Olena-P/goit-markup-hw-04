@@ -218,6 +218,7 @@ a {
     align-items: center;
     justify-content: center;
     display: inline-flex;
+
     width: 270px;
     height: 120px;
     border: none;
@@ -377,7 +378,7 @@ a {
     align-items: center;
     justify-content: center;
     display: inline-flex;
-
+    padding-bottom: 30px;
 }
 
 /*================= ENd Section 3============= */
@@ -606,39 +607,50 @@ img{
 .join{
     margin-left: 70px;
     margin-bottom: 20px;
- font-weight: bold;
-font-size: 14px;
-line-height: 16px;
-font-style: normal;
-text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    font-style: normal;
+    text-transform: uppercase;
 
 color: #FFFFFF;
 }
 .address-icon{
     display: flex;
-
     align-items: center;
 }
+
 .svg-icon{
     display: flex;
-   margin-left: 70px;
+    margin-left: 70px;
 }
 
 
 .svg-list-link{
-margin-left: 10px;
-  width: 44px;
-  height: 44px;
-  align-items: center;
+    margin-left: 10px;
+    width: 44px;
+    height: 44px;
+    align-items: center;
 }
-
 
 .svg-list-item{
-  width: 44px;
-  height: 44px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;   
 }
+
+.svg-list-item:hover,
+.svg-list-item:focus{
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+
 .svg-list-icon{
     width: 20px;
     height: 20px;
