@@ -615,7 +615,7 @@ text-transform: uppercase;
 color: #FFFFFF;
 }
 .address-icon{
-display: flex;
+    display: flex;
 
     align-items: center;
 }
