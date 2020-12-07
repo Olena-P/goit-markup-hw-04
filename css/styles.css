@@ -398,12 +398,13 @@ a {
 .svg-list-item.team:hover, 
 .svg-list-item.team:focus {
   background-color: var(--accent-color) ;
-  fill: var(--primary-white-color);  
+  fill: var(--primary-white-color);
+   
 }
 
 .svg-list-icon.team{
     --icon-color: currentColor;
-    fill: var(--icon-color);
+    
 } 
 
 .svg-list-item.team{
@@ -599,7 +600,7 @@ html {
 .svg-list-icon{
     width: 20px;
     height: 20px;
-    fill: var(--primary-white-color);
+    
 }
 
 .svg-list-item:hover,
