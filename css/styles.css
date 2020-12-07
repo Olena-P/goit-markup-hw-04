@@ -104,17 +104,6 @@ a {
     color: var(--accent-color);
 }
 
-/* .site-nav-link.mail{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 16px;
-    height: 12px;
-    border-radius: 50%;
-    color: #2196F3;
-} */
-
 .site-nav-link.mail{
     color: #757575;
 }
@@ -182,13 +171,15 @@ a {
 }
 
 .button-one{
-    margin-top: 30px;
     display: inline-block;
+    padding: 10px 32px;
+    
     border-radius: 4px;
     text-align: center;
     min-width: 200px;
     height: 50px;
-    padding: 10px 32px;
+    margin-top: 30px;
+    
 
     color: var(--title-texst-color);
     background-color: #F5F4FA;
@@ -370,7 +361,10 @@ a {
 }
 
 .team-list-link{
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 
+    0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
@@ -381,6 +375,14 @@ a {
     padding-bottom: 30px;
 }
 
+.svg-list-icon:hover, 
+.svg-list-icon:focus {
+    fill: var(--primary-white-color);
+    
+}
+.svg-list-icon{
+    fill: var(--primary-texst-color);
+}
 /*================= ENd Section 3============= */
 
 /* ============Section 4============= */
@@ -401,6 +403,7 @@ a {
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .customers-list-item{
@@ -408,6 +411,7 @@ a {
     justify-content: center;
     align-items: center;
   
+    fill: #AFB1B8;
     border-radius: 50%;
     background-color: #fff;
 }
@@ -440,7 +444,21 @@ display: flex;
     fill: var(--accent-color);
 }
 
+:root {
+    -moz-tab-size: 4;
+    tab-size: 4;
+}
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
 
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
 
 /* ============Section 4============= */
 
@@ -578,21 +596,22 @@ img{
 } 
 .button.primary.secondary{
     display: inline-block;
-    border-radius: 4px;
     padding: 6px 22px;
+
+    border-radius: 4px;
+    background-color: #f5f4fa;
+    color: var(--title-texst-color);
+
     border: transparent;
     text-align: center;
     margin-left: 8px;
     margin-bottom: 50px;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
-    
-    color: var(--title-texst-color);
-    background-color: #f5f4fa;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
+    cursor: pointer;
 }
 
 .button.primary:hover,
@@ -605,15 +624,14 @@ img{
 
 /* ===============svg soc================ */
 .join{
-    margin-left: 70px;
+    margin-left: 156px;
     margin-bottom: 20px;
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
     font-style: normal;
     text-transform: uppercase;
-
-color: #FFFFFF;
+    color: var(--primary-white-color);
 }
 .address-icon{
     display: flex;
