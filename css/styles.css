@@ -295,7 +295,7 @@ a {
 .section-skills{
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: white;
+    background-color: var(--primary-white-color);
 }
 
 /*================= END Section 1============= */
@@ -395,13 +395,19 @@ a {
     padding-bottom: 30px;
 }
 
-.svg-list-icon:hover, 
-.svg-list-icon:focus {
-    fill: var(--icon-color);
-    
+.svg-list-item.team:hover, 
+.svg-list-item.team:focus {
+  background-color: var(--accent-color) ;
+  fill: var(--primary-white-color);  
 }
-.svg-list-icon{
-    color: var(--icon-color);
+
+.svg-list-icon.team{
+    --icon-color: currentColor;
+    fill: var(--icon-color);
+} 
+
+.svg-list-item.team{
+    fill: var(--icon-color);
 }
 /*================= ENd Section 3============= */
 
@@ -545,8 +551,8 @@ html {
 
 .footer-logo{
     color: var(--primary-white-color);
-  
 }
+
 .join{
     margin-bottom: 20px;
     font-weight: bold;
@@ -662,6 +668,14 @@ img{
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
     margin-top: 30px;
+}
+
+.portfolio-list:hover,
+.portfolio-list:focus{
+    box-shadow: 
+    0px 1px 1px rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06), 
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .flex-container:nth-last-child(-n + 3){
