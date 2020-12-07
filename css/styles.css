@@ -4,6 +4,7 @@
     --accent-color: #2196F3;
     --primary-white-color: #FFFFFF;
     --primary-background-color: #e5e5e5;
+    --icon-color: #AFB1B8;
 }
 
 h1,
@@ -72,8 +73,6 @@ a {
 }
 
 .header{
-    padding-top: 32px;
-    padding-bottom: 32px;
     border-bottom: 1px solid #ECECEC;
     background-color: var(--primary-white-color);
 }
@@ -93,6 +92,8 @@ a {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .site-nav-link:hover,
@@ -100,12 +101,16 @@ a {
     color: var(--accent-color);
 }
 
-.current{
+/* .current{
     color: var(--accent-color);
-}
+} */
 
 .site-nav-link.mail{
-    color: #757575;
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    color: var(--primary-texst-color);
+   
 }
 
 .site-nav-link.mail:hover,
@@ -114,7 +119,11 @@ a {
 }
 
 .site-nav-link.number{
-    color: #757575;
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    color: var(--primary-text-color);
+    fill: var(--title-texst-color);
 }
 
 .site-nav-link.number:hover,
@@ -131,11 +140,22 @@ a {
     font-family: Raleway;
     font-size: 26px;
     line-height: 1.2;
- }
+}
 
 .logo-accent{
     color: var(--accent-color);
 }
+
+.mail-svg{
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.number-svg{
+    fill: currentColor;
+    margin-right: 10px;
+}
+
  
 /*============  END HEADER ============*/
 
@@ -377,11 +397,11 @@ a {
 
 .svg-list-icon:hover, 
 .svg-list-icon:focus {
-    fill: var(--primary-white-color);
+    fill: var(--icon-color);
     
 }
 .svg-list-icon{
-    fill: var(--primary-texst-color);
+    color: var(--icon-color);
 }
 /*================= ENd Section 3============= */
 
@@ -398,9 +418,7 @@ a {
     align-items: center;
     justify-content: center;
     display: inline-flex;
-    width: 170px;
-    height: 90px;
-    border: 1px solid #AFB1B8;
+   
     box-sizing: border-box;
     border-radius: 4px;
     cursor: pointer;
@@ -410,20 +428,25 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-  
+    width: 170px;
+    height: 90px;
+    border: 1px solid var(--icon-color);
     fill: #AFB1B8;
-    border-radius: 50%;
     background-color: #fff;
+    color: var(--icon-color);
+
 }
 
 .customers-svg{
     width: 40px;
     height: 40px;
+    fill: currentColor;
+    
 }
 
 .customers-list{
-display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .customers-list .customers-list-link + .customers-list-link{
@@ -435,13 +458,15 @@ display: flex;
     padding-bottom: 94px;
 }
 
-.customers-list-link:hover,
-.customers-list-link:focus{
-    border-color: var(--accent-color);
-}
 .customers-list-item:hover,
 .customers-list-item:focus{
-    fill: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.footer.logo{
+    font-family: Raleway;
+    font-style: normal;  
 }
 
 :root {
@@ -475,10 +500,24 @@ html {
     color: var(--accent-color);
 }
 
+.site-nav-link.number:hover,
+.site-nav-link.number:focus{
+    color: var(--accent-color);
+}
+
 .footer{
     background: #2F303A;
+    height: 252px;
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.footer-list-address{
+    margin-top: 20px;
+}
+
+.footer-address{
+    margin-top: 9px;
 }
 
 .footer-list-link{
@@ -491,35 +530,81 @@ html {
     color: rgba(255, 255, 255, 0.6);
 }
 
+.site-nav-link.number{
+    color: #757575;
+}
+
+.footer.logo{
+    font-family: Raleway;
+    font-style: normal;
+}
+
 .footer-list-link.address{
     color: var(--primary-white-color);
 }
 
 .footer-logo{
     color: var(--primary-white-color);
+  
+}
+.join{
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    font-style: normal;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
 }
 
-.container.footer-list{
-    height: 252px;
-    padding-top: 60px;
-    padding-bottom: 60px;
+.address-icon{
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start
+}
+.svg-icon{
+    display: flex;
+  
+}
+.address-box{
+    flex-direction: column-reverse;
 }
 
-.footer-address{
-    margin-top: 9px;
+.svg-list-link{
+    margin-right: 10px;
+    width: 44px;
+    height: 44px;
+ 
 }
 
-.site-nav-link.number{
-    color: #757575;
+.svg-list-item{
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    fill: var(--primary-white-color);
 }
 
-.footer-address.sity{
-    margin-top: 20px;
-}
- .footer-address{
-    margin-top: 9px;
+.svg-list-icon{
+    width: 20px;
+    height: 20px;
+    fill: var(--primary-white-color);
 }
 
+.svg-list-item:hover,
+.svg-list-item:focus{
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+.address-box{
+    margin-left: 70px;
+}
 /*============ END FOOTER ============*/
 
 /*================= PORTFOLIO============= */
@@ -620,58 +705,3 @@ img{
     background-color: var(--accent-color);
 }
 /* =============  END Button =========*/
-
-
-/* ===============svg soc================ */
-.join{
-    margin-left: 156px;
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    font-style: normal;
-    text-transform: uppercase;
-    color: var(--primary-white-color);
-}
-.address-icon{
-    display: flex;
-    align-items: center;
-}
-
-.svg-icon{
-    display: flex;
-    margin-left: 70px;
-}
-
-
-.svg-list-link{
-    margin-left: 10px;
-    width: 44px;
-    height: 44px;
-    align-items: center;
-}
-
-.svg-list-item{
-    align-items: center;
-    justify-content: center;
-    display: inline-flex;
-    padding: 12px;
-    width: 44px;
-    height: 44px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;   
-}
-
-.svg-list-item:hover,
-.svg-list-item:focus{
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
-}
-
-
-.svg-list-icon{
-    width: 20px;
-    height: 20px;
-    fill: var(--primary-white-color);
-}
-/* ===============end svg soc================ */
