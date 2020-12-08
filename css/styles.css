@@ -201,8 +201,8 @@ a {
     margin-top: 30px;
     
 
-    color: var(--title-texst-color);
-    background-color: #F5F4FA;
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -399,12 +399,10 @@ a {
 .svg-list-item.team:focus {
   background-color: var(--accent-color) ;
   fill: var(--primary-white-color);
-   
 }
 
 .svg-list-icon.team{
     --icon-color: currentColor;
-    
 } 
 
 .svg-list-item.team{
